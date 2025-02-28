@@ -294,12 +294,7 @@ export default function SettingPage({ searchParams }: Props) {
       {/*  setIsOpen={setIsConfirmModalOpen}*/}
       {/*/>*/}
 
-      <div
-        className={cn(
-          "p-4",
-          isBusiness ? "mt-auto" : "fixed bottom-0 left-0 right-0 bg-[#1b1b1e]"
-        )}
-      >
+
         <Button
           type="button"
           onClick={() => {
@@ -309,7 +304,7 @@ export default function SettingPage({ searchParams }: Props) {
         >
           저장
         </Button>
-      </div>
+
     </div>
   );
 }
