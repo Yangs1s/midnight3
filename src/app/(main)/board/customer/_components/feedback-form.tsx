@@ -41,7 +41,6 @@ export default function FeedbackForm() {
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      phone: "",
       type: "",
       contents: "",
       image: "",
