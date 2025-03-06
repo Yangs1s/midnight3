@@ -23,7 +23,7 @@ const SideFloating: React.FC<SideFloatingProps> = ({ isSideOpen, setIsSideOpen }
       {isSideOpen ? (
         <div className="ml-auto mt-[18px] w-fit mr-4 z-20">
           <div className="bg-[#0F0F0F80] px-2 py-3 rounded-[8px] flex flex-col gap-4">
-            <div className="flex flex-col items-center gap-2">
+            <div role={'presentation'} onClick={()=>{router.push('/manage-list')}} className="flex flex-col items-center gap-2">
               <div className="bg-white rounded-[8px] flex items-center justify-center w-[32px] h-[32px]">
                 <Image src="/icon/userIcon2.svg" alt="유저" width={16} height={16} />
               </div>
